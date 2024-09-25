@@ -45,9 +45,9 @@ function mealsDisplay() {
 }
 
 input.addEventListener("input", (e) => {
-  fetchMeals(e.target.value);
+  // fetchMeals(e.target.value);
   //ou bien recherche en temps réel
-  //   fetchMeals(e.target.value).then(() => mealsDisplay());
+     fetchMeals(e.target.value).then(() => mealsDisplay());
 });
 form.addEventListener("submit", (e) => {
   e.preventDefault();
